@@ -1,0 +1,64 @@
+header {
+    height: 10vh;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 0 8rem;
+    flex-grow: 1;
+  }
+  h1{
+    font-size: 40px;
+    margin-right: 5%;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  header>input,header>button, header>select{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 6px 10px;
+    transition: 0.1s;
+    box-shadow: 10px 10px 24px -10px rgba(0,0,0,0.75);
+    font-size: 16px;
+
+  }
+
+  header>input{
+    min-width: 300px;
+  }
+  
+  header>input:hover , header >button:hover {
+border: 1px solid #1bb1ed;
+  }
+
+
+  @media (max-width: 1200px) {
+    header{
+    justify-content: center;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    header{
+      gap: 30px;
+      width: 100%;
+      padding: 20px;
+      justify-content: space-between;
+      }
+    header>input{
+      min-width: 8rem;
+    }
+
+  }
+
+  @media (max-width: 770px) {
+    header{
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+    
+    };
+
+  }
+ 
